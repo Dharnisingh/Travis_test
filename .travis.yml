@@ -1,0 +1,13 @@
+language: bash
+
+sudo: required
+
+env:
+  -IMG="LINUX"
+  -IMG="UNIX"
+  -IMG="WIN"
+ver:
+  -KUBE=1.1
+  -KUBE=2.1
+
+script: ./test.sh
