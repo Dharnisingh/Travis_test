@@ -7,5 +7,9 @@ env:
     - IMG="LINUX"
     - IMG="UNIX"
     - IMG="WIN"
+env:
+  matrix:
+    - OS=1
+    - OS=2
 
-script: ./test.sh $IMG
+script: ./test.sh $IMG $OS
