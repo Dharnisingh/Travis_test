@@ -4,8 +4,8 @@ sudo: required
 
 env:
   matrix:
-    -IMG="LINUX"
-    -IMG="UNIX"
-    -IMG="WIN"
+    - IMG="LINUX"
+    - IMG="UNIX"
+    - IMG="WIN"
 
 script: ./test.sh $IMG
