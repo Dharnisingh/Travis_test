@@ -1,6 +1,6 @@
 #~/bin/bash
 
-echo "IMG = $1 KUBE=$2"
+echo "IMG = $1 "
 for i in {1..50}
 do
 	echo "***Travis Test****"
