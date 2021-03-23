@@ -6,9 +6,15 @@ env:
   global:
     - scr=/go/src/script
   matrix:
-    - IMG="LINUX"
-    - IMG="UNIX"
-    - IMG="WIN"
+    - IMG="LINUX" KUBE=1
+    - IMG="LINUX" KUBE=2
+    - IMG="LINUX" KUBE=3
+    - IMG="UNIX" KUBE=1
+    - IMG="UNIX" KUBE=2
+    - IMG="UNIX" KUBE=3
+    - IMG="WIN" KUBE=1
+    - IMG="WIN" KUBE=2
+    - IMG="WIN" KUBE=3
 
 
 script:
