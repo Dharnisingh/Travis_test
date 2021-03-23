@@ -3,13 +3,15 @@ language: bash
 sudo: required
 
 env:
+  global:
+    - scr=/go/src/script
   matrix:
     - IMG="LINUX"
     - IMG="UNIX"
     - IMG="WIN"
-env:
-  matrix:
-    - OS=1
-    - OS=2
 
-script: ./test.sh $IMG $OS
+
+script:
+  - echo "Hello" 
+  - ./test.sh $IMG
+
