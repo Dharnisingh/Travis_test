@@ -2,6 +2,11 @@ language: bash
 
 sudo: required
 
+
+notifications:
+  email:
+    - dharnisingh@gmail.com
+
 env:
   global:
     - scr=/go/src/script
