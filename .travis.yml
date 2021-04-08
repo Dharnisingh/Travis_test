@@ -2,11 +2,6 @@ language: bash
 
 sudo: required
 
-
-notifications:
-  email:
-    - dharnisingh@gmail.com
-
 env:
   global:
     - scr=/go/src/script
@@ -26,3 +21,6 @@ script:
   - echo "Hello" 
   - ./test.sh $IMG
 
+notifications:
+  email:
+    - dharnisingh@gmail.com
